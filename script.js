@@ -67,7 +67,7 @@ connect_button.onclick = () =>
 	datachannel.onopen = () => 
 	{
 		pinglog.innerHTML += "Beginning test...<br>The test will run for two minutes.<br>";
-		log_div.style.display = "block";
+		log_div.style.display = "flex";
 		invite_div.style.display = "none";
 		start_menu[0].style.display = "none";
 		start_menu[1].style.display = "none";
@@ -119,7 +119,7 @@ join_button.onclick = function()
 	peer_connection.ondatachannel = event =>
 	{
 		pinglog.innerHTML += "Beginning test...<br>The test will run for two minutes.<br>";
-		log_div.style.display = "block";
+		log_div.style.display = "flex";
 		join_div.style.display = "none";
 		const UI_visual_test_timer = new Date(test_duration);
 		const UI_visual_timer_interval = setInterval(() => 
