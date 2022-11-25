@@ -1,12 +1,17 @@
-Fighting game connection tester
-===
+
+#Fighting game connection tester
+
 This application tests the network connection between two peers with regard to
 the requirements of fighting games. This application can tell good wifi apart from bad wifi.
-A perfect connection has no ping spikes.
-The fewer ping spikes, the better the connection for fighting games.
-A few ping spikes over the course of the two minute test are acceptable, especially if spread out and not all at once.
+A good connection has two things: Low average ping, and few to no ping spikes.
 
-This was my first time using WebRTC and I had to learn a bunch of new stuff, so cleaning up of the code and adding some features will come in a future push (it will stay minimalistic though and won't get bloated).
+I have tested that it measures fighting game connections by
+being on a good connection, running the test, and playing games against a friend of mine across the ocean, and then switching to a bad connection and doing the same, and seeing that this application shows bad connections as bad, and good connections as good.
 
-This is a minimum viable product. I have tested that it measures fighting game connections by
-being on a good connection, running the test, and playing games against a friend of mine acrossthe ocean, and then switching to a bad connection and doing the same, and seeing that this application shows bad connections as bad, and good connections as good.
+If you're on a wireless connection and you are unsure of whether you're ruining the experience for the other player, you can run this test with him or her. You can also use this test as a tournament organiser to solve connection disputes.
+
+##Known issues
+
+Other networking applications can change the result of the test. One time when I ran two instances on the same computer, I got a lot of ping spikes when, as the test was running, I started Slack (a messaging program).
+I don't know if it's networking programs in general, or specifically, other applications that use WebRTC. I suspect the latter but I haven't tested it.
+
