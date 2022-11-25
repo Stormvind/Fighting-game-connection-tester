@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" content="width=device-width" name="viewport">
+		<title>FGCT</title>
+		<link rel="stylesheet" href="style.css">
+		<script defer src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="start-menu">
+			<h1>Fighting game connection tester</h1>
+		</div>
+		<div class="start-menu">
+			<button id="invite-button">Invite</button>
+			<button id="join-button">Join</button>
+		</div>
+		<div class="test-area-flex-container">
+		<div class="test-area">
+			<div class="invite-div">
+				<h3>Offer</h3>
+				<h5>Send this to the other user</h5>
+				<textarea id="local-offer-input"></textarea>
+				<br>
+				<h3>Answer</h3>
+				<h5>Paste the other user's answer here, then connect</h5>
+				<textarea id="remote-answer-input"></textarea>
+				<br>
+				<br>
+				<button id="connect-button">Connect</button>
+			</div>
+			<div class="join-div">
+				<h3>Offer</h3>
+				<h5>
+					Get an offer from the other user and paste it here, then click on the generate answer button
+				</h5>
+				<textarea id="remote-offer-input"></textarea>
+				<br>
+				<br>
+				<button id="generate-answer-button">Generate answer</button>
+				<h3>Answer</h3>
+				<h5>Send this to the other user and wait for the test to be started</h5>
+				<textarea id="local-answer-input"></textarea>
+			</div>
+			<div class="log-div">
+				Anomalies: <span id="anomalies-span">0</span>
+				<br>
+				Average ms: <span id="average-ping-span"></span>
+				<br>
+				Time left: <span id="time-left-span">2:00</span>
+				<div class="ping-log" id="pinglog"></div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
