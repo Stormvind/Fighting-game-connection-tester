@@ -12,6 +12,6 @@ If you're on a wireless connection and you are unsure of whether you're ruining 
 
 ##Known issues
 
-Other networking applications can change the result of the test. One time when I ran two instances on the same computer, I got a lot of ping spikes when, as the test was running, I started Slack (a messaging program).
+Other networking applications can change the result of the test. One time when I ran the test between two instances on the same computer, I got a lot of ping spikes when, as the test was running, I started Slack (a messaging program).
 I don't know if it's networking programs in general, or specifically, other applications that use WebRTC. I suspect the latter but I haven't tested it.
 
