@@ -1,7 +1,7 @@
 Fighting game connection tester
 ===
 This application tests the network connection between two peers with regard to
-the requirements of fighting games.
+the requirements of fighting games. This application can tell good wifi apart from bad wifi.
 A perfect connection has no ping spikes.
 The fewer ping spikes, the better the connection for fighting games.
 A few ping spikes over the course of the two minute test are acceptable, especially if spread out and not all at once.
